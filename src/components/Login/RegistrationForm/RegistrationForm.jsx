@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaUser, FaLock, FaEnvelope } from 'react-icons/fa'
+
 
 const RegistrationForm = ({ toggleForm }) => {
   const [username, setUsername] = useState('');
@@ -23,7 +23,7 @@ const RegistrationForm = ({ toggleForm }) => {
               onChange={(e) => setUsername(e.target.value)}
               required
             />
-            <FaUser className="icon" />
+          
           </div>
           <div className="input-box">
             <input
@@ -33,7 +33,7 @@ const RegistrationForm = ({ toggleForm }) => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <FaEnvelope className="icon" />
+          
           </div>
           <div className="input-box">
             <input
@@ -43,7 +43,7 @@ const RegistrationForm = ({ toggleForm }) => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <FaLock className="icon" />
+        
           </div>
           <div className="remember-forgot">
             <label>
