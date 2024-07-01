@@ -31,6 +31,7 @@ const LoginForm = ({ toggleForm }) => {
       <div className="form-box login">
         <form>
           <h1>Login</h1>
+          {error && <div className="error-message">{error}</div>}
           <div className="input-box">
             <input
               type="text"
